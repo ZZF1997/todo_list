@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#filter_element {
+    display: flex;
+    justify-content: inherit;
+    margin-left: 30%;
+}
+
+#outer_container {
+    display: block;
+    width: 40%;
+    margin: 100px auto 0;
+    border-radius: 1rem;
+    background-color: #eeeeee;
+    border: 1px darkgray;
+}
+
+#outer_container .list-header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+#outer_container .list-note {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+#outer_container .new-task {
+    margin: auto;
+}
+
+button {
+    background: rgb(0, 100, 0) none;
+    font-size: 1.6rem;
+    size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+/* New Task */
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+    width: 60%;
+    text-align: center;
+}
+
+input#new-task {
+    float: left;
+    width: 60%;
+    height: 2.0rem;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    border-radius: 0;
+    background: transparent;
+    font-size: 1.6rem;
+
+}
+
+.clr {
+    clear: both;
+}
+
+.task-list {
+    margin: 3rem 10%;
+    max-height: 30rem;
+    overflow-y: auto;
+}
+
+ol li.checked {
+    text-decoration: line-through;
+}
+.error-message{
+    display: block;
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+    width : 80%;
+    border-radius : 1rem;
+    border: 1px #8B0000;
+    background-color: #FFB6C1;
+    font-size : 1rem;
+    color : #000000;
+}

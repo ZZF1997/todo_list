@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo</title>
+    <script src="contents/scripts/todo-list.js"></script>
+    <link rel="stylesheet" href="contents/styles/todo-list.css" type="text/css" media="screen">
+</head>
+<body>
+
+<div id="outer_container">
+    <p class="list-header"><strong>TODO List</strong></p>
+    <p class="list-note">Use this TODO list to manage your work</p>
+    <div style="margin-left: 20%; margin-right: 20%">
+        <label for="new-task"></label>
+        <input id="new-task" type="text" style="width: 87%" placeholder="Enter your TODO item">
+        <button onclick="addTodoItem()">+</button>
+        <div id="error_message"></div>
+    </div>
+    <div class="clr"></div>
+    <div id="filter_element">
+        <input value="All" type="radio" checked name="selection" onchange="AllView()"><label>All</label>
+        <input value="Active" type="radio" name="selection" onchange="ActiveView()"><label>Active</label>
+        <input value="Finished" type="radio" name="selection" onchange="FinishedView()"><label>Finished</label>
+    </div>
+    <div class="clr"></div>
+    <div class="task-list">
+        <ol id="tasks">
+        </ol>
+    </div>
+</div>
+</body>
+</html>

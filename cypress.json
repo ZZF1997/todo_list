@@ -1,0 +1,6 @@
+{
+  "video": false,
+  "screenshotOnRunFailure": false,
+  "reporter": "reporters/reporter.js",
+  "baseUrl": "http://localhost:4444"
+}

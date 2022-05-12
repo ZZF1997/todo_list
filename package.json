@@ -1,0 +1,35 @@
+{
+  "name": "gold-js-level-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 4444",
+    "lint": "eslint --format friendly public/**/*.js",
+    "sonarqube": "./sonar-scan.sh",
+    "test": "cypress run --headless",
+    "e2e": "start-test 4444",
+    "test-extended": "cypress run --headless --reporter reporters/reporter.js --spec 'cypress/integration/todo/todo-extended.test.js'",
+    "extended": "start-test 4444 test-extended",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-formatter-friendly": "^7.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "cypress": "^6.8.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "jest": "^26.6.3",
+    "start-server-and-test": "^1.12.1"
+  }
+}
